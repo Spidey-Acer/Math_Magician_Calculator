@@ -10,8 +10,12 @@ const Button = ({ label, className, onClick }) => (
 // Props Validation
 Button.propTypes = {
   label: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
   onClick: PropTypes.func.isRequired,
+};
+
+Button.defaultProps = {
+  className: 'btn btn-default',
 };
 
 export default Button;
