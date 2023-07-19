@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Button = ({ label, className, onClick }) => (
   <button type="button" className={className} onClick={onClick}>
