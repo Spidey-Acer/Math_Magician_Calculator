@@ -1,3 +1,11 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
 .calculator {
   display: inline-block;
   border: 1px solid #ccc;
@@ -5,7 +13,7 @@
   padding: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
-  width: 240px;
+  width: 280px;
 
   .display {
     border: 1px solid #ccc;
@@ -14,6 +22,7 @@
     text-align: right;
     margin-bottom: 10px;
     font-size: 24px;
+    background-color: gray;
   }
 
   .buttons {
@@ -37,6 +46,15 @@
       &:active {
         background-color: #d1d1d1;
       }
+    }
+
+    .big-button {
+      grid-column: 1 / span 2;
+      grid-row: 5 / span 1;
+    }
+
+    .orange {
+      background-color: orange;
     }
   }
 }
