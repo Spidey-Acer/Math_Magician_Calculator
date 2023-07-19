@@ -1,6 +1,7 @@
-import React from 'react';
-import './Calculator.scss';
-import Button from './button';
+import React from "react";
+import "./Calculator.scss";
+import Button from "./button";
+import "../logic/calculate";
 
 const Calculator = () => (
   <div className="calculator">
