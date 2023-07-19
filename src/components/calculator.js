@@ -1,41 +1,30 @@
 import React from 'react';
 import './Calculator.scss';
+import Button from './button';
 
 const Calculator = () => (
   <div className="calculator">
     <div className="display">0</div>
     <div className="buttons">
-      <button type="button">AC</button>
-      <button type="button">+/-</button>
-      <button type="button">%</button>
-      <button type="button" className="orange">
-        ÷
-      </button>
-      <button type="button">7</button>
-      <button type="button">8</button>
-      <button type="button">9</button>
-      <button type="button" className="orange">
-        x
-      </button>
-      <button type="button">4</button>
-      <button type="button">5</button>
-      <button type="button">6</button>
-      <button type="button" className="orange">
-        -
-      </button>
-      <button type="button">1</button>
-      <button type="button">2</button>
-      <button type="button">3</button>
-      <button type="button" className="orange">
-        +
-      </button>
-      <button type="button" className="big-button">
-        0
-      </button>
-      <button type="button">.</button>
-      <button type="button" className="orange">
-        =
-      </button>
+      <Button label="AC" />
+      <Button label="+/-" />
+      <Button label="%" />
+      <Button label="÷" className="orange" />
+      <Button label="7" />
+      <Button label="8" />
+      <Button label="9" />
+      <Button label="x" className="orange" />
+      <Button label="4" />
+      <Button label="5" />
+      <Button label="6" />
+      <Button label="-" className="orange" />
+      <Button label="1" />
+      <Button label="2" />
+      <Button label="3" />
+      <Button label="+" className="orange" />
+      <Button label="0" className="big-button" />
+      <Button label="." />
+      <Button label="=" className="orange" />
     </div>
   </div>
 );
