@@ -43,7 +43,7 @@ const Quote = () => {
         <div>
           <p>{quote.quote}</p>
           <p>
-            -
+            Brains behind the quote:
             {quote.author}
           </p>
           <p>
