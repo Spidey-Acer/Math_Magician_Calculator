@@ -29,7 +29,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show Your Support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -185,12 +184,6 @@ If you like this project please be kind enough to give it a star.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - [Microverse](https://www.microverse.org/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
