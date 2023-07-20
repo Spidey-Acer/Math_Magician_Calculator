@@ -1,8 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise, you can also remove it. -->
-  <img src="your_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./src/assets/5566.jpg" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Math Magician Project</b></h3>
@@ -77,81 +76,61 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> To get started with the Math Magician Project, follow the instructions below.
+To get started with the Math Magician app, follow the instructions below:
 
 ### Prerequisites
 
-To run this project, you need:
+Make sure you have the following tools installed on your machine:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- Node.js: You can download and install Node.js from the official website: [https://nodejs.org/](https://nodejs.org/)
 
 ### Setup
 
-Clone this repository to your desired folder:
+1. Clone this repository to your desired folder by running the following command in your terminal or command prompt:
 
-<!--
-Example commands:
+   ```sh
+   git clone git@github.com:Peter-Kibet/math-magician.git
+   ```
 
-```sh
-  cd my-folder
-  git clone git@github.com:youraccount/math-magician.git
-```
--->
+2. Change into the project directory:
+
+   ```sh
+   cd math-magician
+   ```
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
+Install the project dependencies by running the following command:
 
 ```sh
-  cd math-magician
-  npm install
+npm install
 ```
--->
 
 ### Usage
 
-To run the project, execute the following command:
-
-<!--
-Example command:
+To run the Math Magician app locally, use the following command:
 
 ```sh
-  npm start
+npm start
 ```
--->
+
+The app will be accessible in your browser at `http://localhost:3000/`.
 
 ### Run Tests
 
-To run tests, use the following command:
-
-<!--
-Example command:
+To run tests for the Math Magician app, execute the following command:
 
 ```sh
-  npm test
+npm test
 ```
--->
 
 ### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
+To deploy the app for production, you can use the following command:
 
 ```sh
-
+npm run build
 ```
--->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,11 +140,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Your Name**
+👤 **Peter Kibet**
 
-- GitHub: [@yourgithubhandle](https://github.com/yourgithubhandle)
-- Twitter: [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/yourlinkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Peter-Kibet)
+- Twitter: [@twitterhandle](https://twitter.com/Peter_Montana_J)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/peter-jk-077148195/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BRtNdLwX9S4KxQRQYgnD7qQ%3D%3D)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,9 +154,9 @@ Example:
 
 > Describe future features you plan to add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[build a compete website to intergrate with this]**
+- [ ] **[Add Scientific Calculator Functionalities]**
+- [ ] **[Add Maths formulasa and functions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,9 +174,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show Your Support <a name="support"></a>
 
-> Write a message to encourage readers to support your project.
+>
 
-If you like this project...
+If you like this project please be kind enough to give it a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,27 +184,13 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+- [Microverse](https://www.microverse.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  -
-
-[Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
