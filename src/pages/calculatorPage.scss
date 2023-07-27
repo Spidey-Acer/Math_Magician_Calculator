@@ -5,12 +5,13 @@
 }
 
 .calcHome {
-  top: 0;
+  top: 60px;
   left: 0;
   right: 0;
   left: 0;
-
+  margin: auto 0;
   padding: 20px;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
