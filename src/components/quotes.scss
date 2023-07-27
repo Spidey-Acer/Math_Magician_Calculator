@@ -1,0 +1,26 @@
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  h1 {
+    font-size: 2rem;
+    color: rebeccapurple;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #333;
+
+    span {
+      font-size: 1.5rem;
+      color: rebeccapurple;
+      font-style: italic;
+      text-transform: capitalize;
+      font-weight: 200;
+    }
+  }
+}

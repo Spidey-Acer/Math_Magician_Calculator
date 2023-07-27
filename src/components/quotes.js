@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './quotes.scss';
 
 const Quote = () => {
   const [quote, setQuote] = useState(null);
@@ -35,7 +36,7 @@ const Quote = () => {
 
   // Loading state
   return (
-    <div>
+    <div className="quotes-container">
       <h1>Quote of the day</h1>
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
@@ -44,11 +45,11 @@ const Quote = () => {
           <p>{quote.quote}</p>
           <p>
             Brains behind the quote:
-            {quote.author}
+            <span>{quote.author}</span>
           </p>
           <p>
             Category the quote fall in:
-            {quote.category}
+            <span>{quote.category}</span>
           </p>
         </div>
       )}
