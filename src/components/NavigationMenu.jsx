@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './navigationMenu.scss';
 
 function NavigationMenu() {
   return (
     <nav>
-      <h1>Math Magician</h1>
+      <h1>Math Magicians</h1>
       <ul>
         <li>
           <Link to="/">Home</Link>
