@@ -7,7 +7,7 @@ function NavigationMenu() {
       <h1>Math Magician</h1>
       <ul>
         <li>
-          <Link to="/Home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/calculator">Calculator</Link>
