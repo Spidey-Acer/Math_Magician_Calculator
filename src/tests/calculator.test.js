@@ -1,17 +1,34 @@
-import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
-import Calculator from "../Calculator";
+import React from 'react';
+import { render, fireEvent } from '@testing-library/react';
+import Calculator from '../components/calculator';
 
-test("simulates button click", () => {
-  render(<Calculator />);
-  const buttonElement = screen.getByText("7");
-  fireEvent.click(buttonElement);
-  const displayElement = screen.getByTestId("display");
-  expect(displayElement).toHaveTextContent("7");
+test('renders Calculator without crashing', () => {
+  const { getByText } = render(<Calculator />);
+  const linkElement = getByText(/0/i);
+  expect(linkElement).toBeInTheDocument();
 });
 
-test("renders the Calculator component", () => {
-  render(<Calculator />);
-  const calculatorElement = screen.getByTestId("calculator");
-  expect(calculatorElement).toMatchSnapshot();
+test('clicking number button updates the display', () => {
+  const { getByText } = render(<Calculator />);
+  fireEvent.click(getByText('1'));
+  const display = getByText(/1/i);
+  expect(display).toBeInTheDocument();
+});
+
+test('performing addition updates the display', () => {
+  const { getByText } = render(<Calculator />);
+  fireEvent.click(getByText('1'));
+  fireEvent.click(getByText('+'));
+  fireEvent.click(getByText('2'));
+  fireEvent.click(getByText('='));
+  const display = getByText(/3/i);
+  expect(display).toBeInTheDocument();
+});
+
+test('clicking AC button resets the display', () => {
+  const { getByText } = render(<Calculator />);
+  fireEvent.click(getByText('1'));
+  fireEvent.click(getByText('AC'));
+  const display = getByText(/0/i);
+  expect(display).toBeInTheDocument();
 });

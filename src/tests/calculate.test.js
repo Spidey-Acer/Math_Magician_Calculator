@@ -1,25 +1,103 @@
-// tests/calculate.test.js
+import calculate from '../logic/calculate';
 
-import calculate from "../src/components/calculate";
+describe('calculate Function', () => {
+  it('should handle "AC" button correctly', () => {
+    const initialData = {
+      total: '42',
+      next: '23',
+      operation: '+',
+    };
+    const result = calculate(initialData, 'AC');
+    expect(result).toEqual({
+      total: null,
+      next: null,
+      operation: null,
+    });
+  });
 
-test('should clear the calculator data when "AC" button is clicked', () => {
-  const result = calculate({ total: "5", next: "3", operation: "+" }, "AC");
-  expect(result).toEqual({ total: null, next: null, operation: null });
+  it('should handle number button correctly', () => {
+    const initialData = {
+      total: '42',
+      next: '23',
+      operation: '+',
+    };
+    const result = calculate(initialData, '5');
+    expect(result).toEqual({
+      total: '42',
+      next: '235',
+      operation: '+',
+    });
+  });
+
+  it('should handle "." button correctly', () => {
+    const initialData = {
+      total: '42',
+      next: '23',
+      operation: '+',
+    };
+    const result = calculate(initialData, '.');
+    expect(result).toEqual({
+      total: '42',
+      next: '23.',
+      operation: '+',
+    });
+  });
+
+  it('should handle "=" button correctly', () => {
+    const initialData = {
+      total: '42',
+      next: '23',
+      operation: '+',
+    };
+    const result = calculate(initialData, '=');
+    expect(result).toEqual({
+      total: '65',
+      next: null,
+      operation: null,
+    });
+  });
+
+  it('should handle "+/-" button correctly', () => {
+    const initialData = {
+      total: '42',
+      next: '23',
+      operation: '+',
+    };
+    const result = calculate(initialData, '+/-');
+    expect(result).toEqual({
+      total: '42',
+      next: '-23',
+      operation: '+',
+    });
+  });
+
+  it('should handle operation button correctly with existing operation', () => {
+    const initialData = {
+      total: '42',
+      next: '23',
+      operation: '+',
+    };
+    const result = calculate(initialData, '-');
+    expect(result).toEqual({
+      total: '65',
+      next: null,
+      operation: '-',
+    });
+  });
+
+  it('should handle operation button correctly with new operation', () => {
+    const initialData = {
+      total: '42',
+      next: '23',
+      operation: null,
+    };
+    const result = calculate(initialData, '-');
+    expect(result).toEqual({
+      total: '23',
+      next: null,
+      operation: '-',
+    });
+  });
+
+  // Add more test cases as needed for other functionality of the calculate function
 });
-
-test('should update "next" when a number button is clicked', () => {
-  const result = calculate({ next: "5", total: null, operation: null }, "3");
-  expect(result).toEqual({ next: "53", total: null, operation: null });
-});
-
-test('should update "next" and clear the value when "0" is clicked', () => {
-  const result = calculate({ next: "5", total: null, operation: null }, "0");
-  expect(result).toEqual({});
-});
-
-test('should update "next" when "." button is clicked', () => {
-  const result = calculate({ next: "5", total: null, operation: null }, ".");
-  expect(result).toEqual({ next: "5." });
-});
-
-// Add more test cases for other scenarios and edge cases
